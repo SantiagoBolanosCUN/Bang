@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+.Canvas {
+  height: 100%;
+  width: 100%;
+}
+
