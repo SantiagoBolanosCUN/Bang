@@ -16,12 +16,13 @@ function Planeta1() {
   useFrame(({ clock }) => {
     ref3.current.rotation.z = clock.getElapsedTime();
   });
+  const boxClick = () =>{
+    alert('clicked the Planet1')
+}
   return (
     <mesh
       ref={ref3}
-      onClick={() => {
-        api.velocity.set(0, 2, 0);
-      }}
+      onClick={boxClick}
       scale={[5, 5, 5]}
       position={[17.118, 5.562, 2]}
     >
@@ -37,12 +38,13 @@ function Planeta2() {
   useFrame(({ clock }) => {
     ref3.current.rotation.z = clock.getElapsedTime();
   });
+  const boxClick = () =>{
+    alert('clicked the Planet2')
+}
   return (
     <mesh
       ref={ref3}
-      onClick={() => {
-        api.velocity.set(0, 2, 0);
-      }}
+      onClick={boxClick}
       scale={[5, 5, 5]}
       position={[10.58, -14.56, -12]}
     >
@@ -58,12 +60,13 @@ function Planeta3() {
   useFrame(({ clock }) => {
     ref3.current.rotation.z = clock.getElapsedTime();
   });
+  const boxClick = () =>{
+    alert('clicked the Planet3')
+}
   return (
     <mesh
       ref={ref3}
-      onClick={() => {
-        api.velocity.set(0, 2, 0);
-      }}
+      onClick={boxClick}
       scale={[5, 5, 5]}
       position={[-10.58, -14.56, -12]}
     >
@@ -79,12 +82,13 @@ function Planeta4() {
   useFrame(({ clock }) => {
     ref3.current.rotation.z = clock.getElapsedTime();
   });
+  const boxClick = () =>{
+    alert('clicked the Planet4')
+}
   return (
     <mesh
       ref={ref3}
-      onClick={() => {
-        api.velocity.set(0, 2, 0);
-      }}
+      onClick={boxClick}
       position={[-17.18, 5.56, 1]}
       scale={[5, 5, 5]}
     >
@@ -100,13 +104,15 @@ function Planeta5() {
   useFrame(({ clock }) => {
     ref2.current.rotation.z = clock.getElapsedTime(0.05);
   });
+  const boxClick = () =>{
+    alert('clicked the Planet5')
+}
+
 
   return (
     <mesh
       ref={ref2}
-      onClick={() => {
-        api.velocity.set(0, 2, 0);
-      }}
+      onClick={boxClick}
       position={[0, 18, 12]}
       scale={[5, 5, 5]}
     >
@@ -115,10 +121,29 @@ function Planeta5() {
     </mesh>
   );
 }
+function Navbar1() {
+  const boxClick = () =>{
+    alert('clicked the button')
+}
+  return (
+    <div>
+     
+      <div className="container">
+        <article>
+          <h1>Esto es un navbar? </h1>
+          solo si santiago valida que esto es un navbar....
+          <button
+          onClick={boxClick}>click</button>
+        </article>
+      </div>
+    </div>
+  );
+}
 
 export default function App() {
   return (
     <div className=" h-screen">
+      <Navbar1></Navbar1>
       <Canvas
         camera={{
           fov: 35,
@@ -129,6 +154,7 @@ export default function App() {
           position: [0, 100, 20],
         }}
       >
+        
         {/*<OrbitControls/>*/}
         <Environment background>
                 <mesh>
@@ -136,7 +162,7 @@ export default function App() {
                     <meshBasicMaterial color="#44264E" side={THREE.BackSide} />
                 </mesh>
             </Environment>
-        
+            
         <Stars />
         <ambientLight intensity={0.5} />
         <spotLight position={[15, 30, 20]} angle={0.8} />
