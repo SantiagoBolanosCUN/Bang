@@ -1,10 +1,8 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
-
 import "./App.css";
 import Detail from "./routes/Detail";
-import ReactDOMClient from "react-dom/client";
 import ThreeRouter from "./components/ThreeRouter";
 import { history } from "./components/History";
 import NebulosaInnova from "./routes/NebulosaInnova";
