@@ -5,7 +5,6 @@ import * as THREE from "three";
 import { Physics } from "@react-three/cannon";
 import Navbar from "../components/Navbar";
 import Planet from "../components/Planet";
-
 // import { NebulosaInnova } from "./components/NebulosaInnova";
 
 // camara 15,80,50
