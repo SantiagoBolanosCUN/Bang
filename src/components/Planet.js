@@ -11,7 +11,7 @@ function Planeta({ name, position, texturePath }) {
   });
 
   const onClickHandler = () => {
-    history.push(`/detail/${name}`);
+    history.push(`./${name}`);
   };
 
   return (

@@ -7,6 +7,11 @@ import Detail from "./routes/Detail";
 import ReactDOMClient from "react-dom/client";
 import ThreeRouter from "./components/ThreeRouter";
 import { history } from "./components/History";
+import NebulosaInnova from "./routes/NebulosaInnova";
+import Supernova from "./routes/Supernova";
+import Ideaverso from "./routes/Ideaverso";
+import LibreriaOrion from "./routes/LibreriaOrion";
+import MeteoroGame from "./routes/MeteoroGame";
 
 export default function App() {
   return (
@@ -15,6 +20,11 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/detail/:plantetId" element={<Detail />} />
+          <Route path="/NebulosaInnova" element={<NebulosaInnova />} />
+          <Route path="/Supernova" element={<Supernova />} />
+          <Route path="/Ideaverso" element={<Ideaverso />} />
+          <Route path="/MeteoroGame" element={<MeteoroGame />} />
+          <Route path="/LibreriaOrion" element={<LibreriaOrion />} />
         </Routes>
       </ThreeRouter>
     </div>

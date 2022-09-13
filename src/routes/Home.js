@@ -5,9 +5,6 @@ import * as THREE from "three";
 import { Physics } from "@react-three/cannon";
 import Navbar from "../components/Navbar";
 import Planet from "../components/Planet";
-// import { NebulosaInnova } from "./components/NebulosaInnova";
-
-// camara 15,80,50
 
 export default function Home() {
   return (
@@ -36,27 +33,27 @@ export default function Home() {
         <spotLight position={[15, 30, 20]} angle={0.8} />
         <Physics>
           <Planet
-            name="planeta-1"
+            name="NebulosaInnova"
             position={[17.118, 5.562, 2]}
             texturePath="/fictional1.jpg"
           />
           <Planet
-            name="planeta-2"
+            name="Supernova"
             position={[10.58, -14.56, -12]}
             texturePath="/fictional1.jpg"
           />
           <Planet
-            name="planeta-3"
+            name="Ideaverso"
             position={[-10.58, -14.56, -12]}
             texturePath="/fictional1.jpg"
           />
           <Planet
-            name="planeta-4"
+            name="LibreriaOrion"
             position={[-17.18, 5.56, 1]}
             texturePath="/fictional1.jpg"
           />
           <Planet
-            name="planeta-5"
+            name="MeteoroGame"
             position={[0, 18, 12]}
             texturePath="/fictional1.jpg"
           />

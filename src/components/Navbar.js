@@ -1,8 +1,9 @@
 import React from "react";
+import { history } from "./History";
 
 function Navbar() {
   const boxClick = () => {
-    alert("clicked the button");
+    history.push("./NebulosaInnova");
   };
   return (
     <div>
