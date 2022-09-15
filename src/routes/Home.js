@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { Physics } from "@react-three/cannon";
 import Navbar from "../components/Navbar";
 import Planet from "../components/Planet";
+import Texto from "../components/Texto";
 
 export default function Home() {
   return (
@@ -35,29 +36,35 @@ export default function Home() {
           <Planet
             name="NebulosaInnova"
             position={[17.118, 5.562, 2]}
+            positionTexto={[14.118, 3.562, 10]}
             texturePath="/fictional1.jpg"
           />
           <Planet
             name="Supernova"
             position={[10.58, -14.56, -12]}
+            positionTexto={[7.58, -14.56, -4]}
             texturePath="/fictional1.jpg"
           />
           <Planet
             name="Ideaverso"
             position={[-10.58, -14.56, -12]}
+            positionTexto={[-13.58, -14.56, -4]}
             texturePath="/fictional1.jpg"
           />
           <Planet
             name="LibreriaOrion"
             position={[-17.18, 5.56, 1]}
+            positionTexto={[-20.118, 5.562, 9]}
             texturePath="/fictional1.jpg"
           />
           <Planet
             name="MeteoroGame"
             position={[0, 18, 12]}
+            positionTexto={[-3, 18, 20]}
             texturePath="/fictional1.jpg"
           />
         </Physics>
+
         <CameraShake
           maxYaw={0.05} // Max amount camera can yaw in either direction
           maxPitch={0.05} // Max amount camera can pitch in either direction
