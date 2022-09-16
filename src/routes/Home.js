@@ -5,28 +5,24 @@ import * as THREE from "three";
 import { Physics } from "@react-three/cannon";
 import Navbar from "../components/Navbar";
 import Planet from "../components/Planet";
+import { OrbitControls, Sparkles } from "@react-three/drei";
 
 export default function Home() {
   return (
     <div className="h-screen">
-      <Navbar />
+      {/*<Navbar />*/}
       <Canvas
         camera={{
           fov: 35,
-          zoom: 0.9,
+          zoom: 1.2,
           near: 1,
           far: 10000,
           angle: 10,
           position: [0, 100, 20],
         }}
       >
-        {/*<OrbitControls/>*/}
-        <Environment background>
-          <mesh>
-            <sphereGeometry args={[50, 100, 100]} />
-            <meshBasicMaterial color="#44264E" side={THREE.BackSide} />
-          </mesh>
-        </Environment>
+        <OrbitControls />
+        <Environment files="/cielo.hdr" ground={{ height: 30, radius: 700 }} />
 
         <Stars />
         <ambientLight intensity={0.5} />
@@ -35,39 +31,29 @@ export default function Home() {
           <Planet
             name="NebulosaInnova"
             position={[17.118, 5.562, 2]}
-            texturePath="/fictional1.jpg"
+            texturePath="/fictionalInnova.jpg"
           />
           <Planet
             name="Supernova"
             position={[10.58, -14.56, -12]}
-            texturePath="/fictional1.jpg"
+            texturePath="/fictionalSupernova.jpg"
           />
           <Planet
             name="Ideaverso"
             position={[-10.58, -14.56, -12]}
-            texturePath="/fictional1.jpg"
+            texturePath="/fictionalIdeaverso.jpg"
           />
           <Planet
             name="LibreriaOrion"
             position={[-17.18, 5.56, 1]}
-            texturePath="/fictional1.jpg"
+            texturePath="/fictionalOrion.jpg"
           />
           <Planet
             name="MeteoroGame"
             position={[0, 18, 12]}
-            texturePath="/fictional1.jpg"
+            texturePath="/fictionalMeteoro.jpg"
           />
         </Physics>
-        <CameraShake
-          maxYaw={0.05} // Max amount camera can yaw in either direction
-          maxPitch={0.05} // Max amount camera can pitch in either direction
-          maxRoll={0.05} // Max amount camera can roll in either direction
-          yawFrequency={0} // Frequency of the the yaw rotation
-          pitchFrequency={0} // Frequency of the pitch rotation
-          rollFrequency={0.3} // Frequency of the roll rotation
-          intensity={1} // initial intensity of the shake
-          // if decay = true this is the rate at which intensity will reduce at />
-        />
       </Canvas>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useTexture } from "@react-three/drei";
+import { useTexture, Sparkles } from "@react-three/drei";
 import { history } from "./History";
 
 function Planeta({ name, position, texturePath }) {
@@ -23,6 +23,7 @@ function Planeta({ name, position, texturePath }) {
     >
       <sphereGeometry attach="geometry" />
       <meshStandardMaterial map={colorTexture} />
+      <Sparkles count={100} scale={30} size={6} speed={0.01} />
     </mesh>
   );
 }
