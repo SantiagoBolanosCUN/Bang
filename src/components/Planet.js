@@ -13,9 +13,9 @@ function Planeta({ name, position, positionTexto, texturePath }) {
     ref.current.rotation.z = clock.getElapsedTime();
   });
   const onPointerMouse = () => {
-    ref.current.scale.x = 10;
-    ref.current.scale.y = 10;
-    ref.current.scale.z = 10;
+    ref.current.scale.x = 7;
+    ref.current.scale.y = 7;
+    ref.current.scale.z = 7;
   };
   const offPointerMouse = () => {
     ref.current.scale.x = 5;
