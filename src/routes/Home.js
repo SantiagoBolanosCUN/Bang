@@ -6,6 +6,7 @@ import { Physics } from "@react-three/cannon";
 import Navbar from "../components/Navbar";
 import Planet from "../components/Planet";
 import { OrbitControls, Sparkles } from "@react-three/drei";
+import Texto from "../components/Texto";
 
 export default function Home() {
   return (
@@ -32,28 +33,44 @@ export default function Home() {
             name="NebulosaInnova"
             position={[17.118, 5.562, 2]}
             texturePath="/fictionalInnova.jpg"
+            positionTexto={[14.118, 3.562, 10]}
           />
           <Planet
             name="Supernova"
             position={[10.58, -14.56, -12]}
             texturePath="/fictionalSupernova.jpg"
+            positionTexto={[7.58, -14.56, -4]}
           />
           <Planet
             name="Ideaverso"
             position={[-10.58, -14.56, -12]}
             texturePath="/fictionalIdeaverso.jpg"
+            positionTexto={[-13.58, -14.56, -4]}
           />
           <Planet
             name="LibreriaOrion"
             position={[-17.18, 5.56, 1]}
             texturePath="/fictionalOrion.jpg"
+            positionTexto={[-20.118, 5.562, 9]}
           />
           <Planet
             name="MeteoroGame"
             position={[0, 18, 12]}
             texturePath="/fictionalMeteoro.jpg"
+            positionTexto={[-3, 18, 20]}
           />
         </Physics>
+
+        <CameraShake
+          maxYaw={0.05} // Max amount camera can yaw in either direction
+          maxPitch={0.05} // Max amount camera can pitch in either direction
+          maxRoll={0.05} // Max amount camera can roll in either direction
+          yawFrequency={0} // Frequency of the the yaw rotation
+          pitchFrequency={0} // Frequency of the pitch rotation
+          rollFrequency={0.3} // Frequency of the roll rotation
+          intensity={1} // initial intensity of the shake
+          // if decay = true this is the rate at which intensity will reduce at />
+        />
       </Canvas>
     </div>
   );
