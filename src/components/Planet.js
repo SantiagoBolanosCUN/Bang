@@ -36,7 +36,7 @@ function Planeta({ name, position, positionTexto, texturePath }) {
         onPointerOver={onPointerMouse}
         onPointerOut={offPointerMouse}
       >
-        <sphereGeometry attach="geometry" />s
+        <sphereGeometry attach="geometry" />
         <meshStandardMaterial map={colorTexture} />
       </mesh>
       <mesh>

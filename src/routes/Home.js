@@ -23,7 +23,10 @@ export default function Home() {
         }}
       >
         <OrbitControls />
-        <Environment files="/cielo.hdr" ground={{ height: 30, radius: 700 }} />
+        <Environment
+          files="/fondito.hdr"
+          ground={{ height: 30, radius: 700 }}
+        />
 
         <Stars />
         <ambientLight intensity={0.5} />
@@ -32,36 +35,36 @@ export default function Home() {
           <Planet
             name="NebulosaInnova"
             position={[17.118, 5.562, 2]}
-            texturePath="/fictionalInnova.jpg"
+            texturePath="/textura1.png"
             positionTexto={[14.118, 3.562, 10]}
           />
           <Planet
             name="Supernova"
             position={[10.58, -14.56, -12]}
-            texturePath="/fictionalSupernova.jpg"
+            texturePath="/textura2.png"
             positionTexto={[7.58, -14.56, -4]}
           />
           <Planet
             name="Ideaverso"
             position={[-10.58, -14.56, -12]}
-            texturePath="/fictionalIdeaverso.jpg"
+            texturePath="/textura3.png"
             positionTexto={[-13.58, -14.56, -4]}
           />
           <Planet
             name="LibreriaOrion"
             position={[-17.18, 5.56, 1]}
-            texturePath="/fictionalOrion.jpg"
+            texturePath="/textura4.png"
             positionTexto={[-20.118, 5.562, 9]}
           />
           <Planet
             name="MeteoroGame"
             position={[0, 18, 12]}
-            texturePath="/fictionalMeteoro.jpg"
+            texturePath="/textura5.png"
             positionTexto={[-3, 18, 20]}
           />
         </Physics>
 
-        <CameraShake
+        {/*<CameraShake
           maxYaw={0.05} // Max amount camera can yaw in either direction
           maxPitch={0.05} // Max amount camera can pitch in either direction
           maxRoll={0.05} // Max amount camera can roll in either direction
@@ -70,7 +73,7 @@ export default function Home() {
           rollFrequency={0.3} // Frequency of the roll rotation
           intensity={1} // initial intensity of the shake
           // if decay = true this is the rate at which intensity will reduce at />
-        />
+        />*/}
       </Canvas>
     </div>
   );
