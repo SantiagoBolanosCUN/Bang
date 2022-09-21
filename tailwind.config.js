@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ideaverso: "#2C0551",
+      },
+    },
+    fontFamily: {
+      Delius: ["Delius"],
+    },
   },
   plugins: [],
-}
+};
