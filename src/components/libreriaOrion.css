@@ -10,11 +10,13 @@ body {background: black;
       margin: 0 auto; 
       margin-top: 20px;
       display: flex; 
-        overflow: auto;
+      overflow: auto;
       background: url('https://images2.imgbox.com/39/53/PGtInw9G_o.jpg');
       background-size: cover; 
       background-position: top center;
       background-repeat: no-repeat;
+      
+
     }
     
     .constelation {
@@ -48,8 +50,10 @@ body {background: black;
     
     .estrella {
       height: 100%; 
+      margin-top: 200px;
+      flex-flow: column;
       background: transparent;
-      display: flex;
+      display:flex;
       align-items: center;
       position: relative;
       box-sizing: content-box;
@@ -58,30 +62,77 @@ body {background: black;
     
     
     .event {
-      width: 130px; 
-      height: 130px;
+      width: 23vw; 
+      height: 23vw;
       border-right: 1px solid #f5f5f5;
       border-bottom: 1px solid #f5f5f5;
-      margin: 5px 10px 0 40px;
+      border-left: 1px solid #f5f5f5;
+      border-top: 1px solid #f5f5f5;
+      margin: 85px 55px 0 40px;
       transform: rotate(45deg);
-          display: flex;
-        align-items: start;
-        justify-content: space-between;
-        flex-flow: column;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row;
     }
     
     .event2 {
-        width: 130px; 
-      height: 130px;
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        flex-flow: column;
-    
+      width: 23vw; 
+      height: 23vw;;
+      border-bottom: 1px solid #f5f5f5;
+      border-right: 1px solid #f5f5f5;
+      margin: 85px 55px 0 40px;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row;
+    }
+    .event3 {
+      width: 23vw; 
+      height: 23vw;
+      border-top: 1px solid #f5f5f5;
+      margin: 85px 55px 0 40px;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row;
+    }
+    .event4 {width: 23vw; 
+      height: 23vw;
+
+      border-bottom: 1px solid #f5f5f5;
+      border-left: 1px solid #f5f5f5;
+      margin: 85px 55px 0 40px;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row;
+    }
+    .event5 {
+      width: 23vw; 
+      height: 23vw;
+      margin: 85px 55px 0 40px;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row;
+    }
+    .event6 {
+      width: 23vw; 
+      height: 23vw;
+      border-right: 1px solid #f5f5f5;
       border-left: 1px solid #f5f5f5;
       border-top: 1px solid #f5f5f5;
-      margin: -5px 10px 0 40px;
+      margin: 85px 55px 0 40px;
       transform: rotate(45deg);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row;
     }
     
     
@@ -95,18 +146,18 @@ body {background: black;
       outline-offset: 5px;
       margin: 0px -15px 0 15px;
       cursor: pointer;
-         animation-name: sparkle;
+      animation-name: sparkle;
       animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
     }
     
     @keyframes sparkle {
-         0% {background: #eee; box-shadow: 1px -1px 6px #F0F5F7;}
+      0% {background: #eee; box-shadow: 1px -1px 6px #F0F5F7;}
       15% {background: #fefefe; box-shadow: 1px 1px 1px #F0F5F7;}
       50% {background: #E2E7FC; box-shadow: 1px -1px 5px #F0F5F7;}
       65% {background: #CAD4E0; box-shadow: -1px 1px 6px #F0F5F7;}
-     100% {box-shadow: 1px -1px 8px #F0F5F7;}
+      100% {box-shadow: 1px -1px 8px #F0F5F7;}
     }
     
     .theev {
@@ -122,7 +173,7 @@ body {background: black;
       justify-content: center;
       border-radius: 10px;
       padding: 5px;
-        color: #0e0e0e;
+      color: #0e0e0e;
       text-decoration: none;
       opacity: 0;
       z-index: -1;
@@ -137,11 +188,7 @@ body {background: black;
       z-index: 9!important;
       
     }
-    /*.dot:hover {
-        width: 13px;
-        height: 13px;
-      }
-    */
+    
     .dentr1 {
       width: 8px; 
       height: 8px; 
@@ -149,26 +196,26 @@ body {background: black;
       border-radius: 50%;
       outline: 1px solid #f5f5f5;
       outline-offset: 10px;
-        cursor: pointer;
-           animation-name: sparkle1;
+      cursor: pointer;
+      animation-name: sparkle1;
       animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
     }
     
     
     @keyframes sparkle1 {
-         0% {background: #eee; box-shadow: 1px -1px 6px #F0E0F7;}
+      0% {background: #eee; box-shadow: 1px -1px 6px #F0E0F7;}
       15% {background: #fefefe; box-shadow: 1px 1px 1px #F0E0F7;}
       50% {background: #DBF3FF; box-shadow: 1px -1px 5px #F0E0F7;}
       65% {background: #CAD4E0; box-shadow: -1px 1px 6px #F0E0F7;}
-     100% {box-shadow: 1px -1px 8px #F0E0F7;}
+      100% {box-shadow: 1px -1px 8px #F0E0F7;}
     }
     
     
     
     .theev2 {
-     width: 150px;
+      width: 150px;
       height: auto;
       position: absolute;
       opacity: 0;
@@ -191,7 +238,7 @@ body {background: black;
     
     
     .theev3 {
-     width: 150px;
+      width: 150px;
       height: auto;
       position: absolute;
       opacity: 0;
@@ -206,7 +253,7 @@ body {background: black;
       border-radius: 10px;
       font-family: 'Arial';
       padding: 5px;
-        color: #0e0e0e;
+      color: #0e0e0e;
       text-decoration: none;
       z-index: -9;
       transition: all 400ms ease-in-out;
@@ -233,7 +280,7 @@ body {background: black;
     }
     
     .dentr2 {
-        width: 8px; 
+      width: 8px; 
       height: 8px; 
       background: #f5f5f5;
       border-radius: 50%;
@@ -245,21 +292,21 @@ body {background: black;
       cursor: pointer;
       animation-name: sparkle2;
       animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
     }
     
     @keyframes sparkle2 {
-         0% {background: #eee; box-shadow: 1px -1px 6px #F7E3D8;}
+      0% {background: #eee; box-shadow: 1px -1px 6px #F7E3D8;}
       15% {background: #fefefe; box-shadow: 1px 1px 1px #F7E3D8;}
       50% {background: #F7E3D8; box-shadow: 1px -1px 5px #F7E3D8;}
       65% {background: #CAD4E0; box-shadow: -1px 1px 6px #F7E3D8;}
-     100% {box-shadow: 1px -1px 8px #F7E3D8;}
+      100% {box-shadow: 1px -1px 8px #F7E3D8;}
     }
     
     .galaxy ::-webkit-scrollbar {
-        background: transparent;
-        height: 10px;
+      background: transparent;
+      height: 10px;
     }
     
     .galaxy ::-webkit-scrollbar-track {
@@ -267,6 +314,6 @@ body {background: black;
     }
     
     .galaxy ::-webkit-scrollbar-thumb {
-        background: #299ae0;
-        border: 3px solid #000;
+      background: #299ae0;
+      border: 3px solid #000;
     }
