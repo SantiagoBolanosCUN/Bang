@@ -46,7 +46,7 @@ function Bg() {
 export default function Home() {
   const props = { base: "#ff4eb8", colorA: "#00ffff", colorB: "#ff00e3" };
   return (
-    <div className="h-screen">
+    <div className="h-screen cursor-pointer">
       {/*<Navbar />*/}
       <Canvas
         camera={{
