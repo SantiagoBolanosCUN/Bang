@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // react-id-swiper
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,7 +19,7 @@ import Libreria12 from "../assets/Libreria12.png";
 import Libreria13 from "../assets/Libreria13.png";
 import Libreria14 from "../assets/Libreria14.png";
 
-const SwiperImg = (/*numeroSlide*/) => {
+const SwiperImg = ({ numeroSlide }) => {
   return (
     <>
       <div
@@ -44,7 +44,7 @@ const SwiperImg = (/*numeroSlide*/) => {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          initialSlide={0 /*numeroSlide*/}
+          initialSlide={numeroSlide}
         >
           <SwiperSlide>
             <img src={Libreria2} alt="image1" style={{ width: "100%" }}></img>

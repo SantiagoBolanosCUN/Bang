@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useTexture, Sparkles } from "@react-three/drei";
+import { useTexture } from "@react-three/drei";
 import { history } from "./History";
 import Texto from "./Texto";
 

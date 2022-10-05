@@ -3,9 +3,8 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { Physics } from "@react-three/cannon";
-import Navbar from "../components/Navbar";
 import Planet from "../components/Planet";
-import { OrbitControls, Sparkles } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { LayerMaterial, Depth } from "lamina";
 
 function Bg() {
