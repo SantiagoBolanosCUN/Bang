@@ -43,14 +43,14 @@ export default function LibreriaOrion() {
             <div className="event2"></div>
             <button id={0} onClick={() => clicked(0, "Slide 1")}>
               <div className="dot">
-                <div className="theev">Nombre del evento - Fecha </div>
+                <div className="theev">evento 1 - Fecha </div>
               </div>
             </button>
 
             <div className="event3">
               <button id={1} onClick={() => clicked(1, "Slide 2")}>
                 <div className="dot">
-                  <div className="theev">Nombre del evento - Fecha </div>
+                  <div className="theev">evento 2 - Fecha </div>
                 </div>
               </button>
             </div>
@@ -58,7 +58,7 @@ export default function LibreriaOrion() {
             <div className="event5">
               <button id={2} onClick={() => clicked(2, "Slide 3")}>
                 <div className="dot">
-                  <div className="theev">Nombre del evento - Fecha </div>
+                  <div className="theev">evento 3 - Fecha </div>
                 </div>
               </button>
             </div>
@@ -67,13 +67,13 @@ export default function LibreriaOrion() {
             <div className="event5">
               <button id={3} onClick={() => clicked(3, "Slide 4")}>
                 <div className="dot">
-                  <div className="theev">Nombre del evento - Fecha </div>
+                  <div className="theev">evento 4 - Fecha </div>
                 </div>
               </button>
             </div>
             <button id={4} onClick={() => clicked(4, "Slide 5")}>
               <div className="dot">
-                <div className="theev">Nombre del evento - Fecha </div>
+                <div className="theev">evento 5 - Fecha </div>
               </div>
             </button>
             <div className="event"></div>
