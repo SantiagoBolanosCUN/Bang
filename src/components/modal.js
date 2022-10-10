@@ -9,8 +9,8 @@ const Modal = ({ setModalOn, setChoice, numeroSlide, descripcionSlide }) => {
   return (
     <div className="   bg-zinc-200 opacity-80 fixed inset-0 z-50   ">
       <div className="relative h-screen justify-center items-center bg-white border-4 border-sky-500 ">
-        <div className="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+        <div className="flex justify-between items-start p-4 rounded-t  border-b dark:border-gray-600">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-black">
             {descripcionSlide}
           </h3>
           <button
