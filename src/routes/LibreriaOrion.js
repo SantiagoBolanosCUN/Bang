@@ -41,7 +41,7 @@ export default function LibreriaOrion() {
         <div className="constelation">
           <h1>Librería Orión</h1>
           <p>En cada estrella encontraras una sorpresa</p>
-          <a className="btn" href="/">
+          <a className="btn" href="/Home">
             Home
           </a>
         </div>

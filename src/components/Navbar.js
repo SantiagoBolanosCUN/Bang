@@ -3,7 +3,7 @@ import { history } from "./History";
 
 function Navbar({ fixed }) {
   function onClickHandler() {
-    history.push("/");
+    history.push("/Home");
   }
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
