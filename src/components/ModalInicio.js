@@ -9,7 +9,7 @@ const ModalInicio = ({ setModalOn, setChoice }) => {
     history.push(`/`);
   };
   const handleOKClick2 = () => {
-    setChoice(false);
+    setChoice(true);
     setModalOn(false);
   };
   return (
