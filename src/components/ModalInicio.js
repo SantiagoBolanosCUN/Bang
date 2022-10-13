@@ -13,7 +13,7 @@ const ModalInicio = ({ setModalOn, setChoice }) => {
     setModalOn(false);
   };
   return (
-    <div className="   bg-zinc-200 opacity-90 fixed inset-0 z-50   ">
+    <div className="   bg-zinc-200 fixed inset-0 z-50   ">
       <div className="relative h-screen justify-center items-center bg-white border-4 border-sky-500 ">
         <div className="contenedorImg h-screen text-white-400">
           <Navbar></Navbar>
