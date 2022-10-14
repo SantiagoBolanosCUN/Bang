@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f3df491.css",
+    "main.js": "/static/js/main.6f17336a.js",
+    "static/media/Libreria13.png": "/static/media/Libreria13.91177941a8fab47773de.png",
+    "static/media/Libreria4.png": "/static/media/Libreria4.d2ff3f4e1e0447c101ab.png",
+    "static/media/Libreria11A.png": "/static/media/Libreria11A.cec2de7242df857d1533.png",
+    "static/media/Libreria12.png": "/static/media/Libreria12.8759b5faf22e153cab37.png",
+    "static/media/Libreria6.png": "/static/media/Libreria6.2da0660fceca84843677.png",
+    "static/media/Libreria5.png": "/static/media/Libreria5.892eeffa13e7d2d3413f.png",
+    "static/media/Libreria11.png": "/static/media/Libreria11.c6192cc55cd22b34fdeb.png",
+    "static/media/Libreria6A.png": "/static/media/Libreria6A.6d2dbd93c2441a65c8cf.png",
+    "static/media/Libreria2.png": "/static/media/Libreria2.37a0aadb9138f7e1ebbc.png",
+    "static/media/Libreria14.png": "/static/media/Libreria14.e4b88e2a7fadaf83a1b5.png",
+    "static/media/Libreria3.png": "/static/media/Libreria3.00806171e75418ff22ec.png",
+    "static/media/FondoLibreriaOrion.png": "/static/media/FondoLibreriaOrion.18aba0fb60ee11b933b4.png",
+    "static/media/FondoModal.png": "/static/media/FondoModal.18aba0fb60ee11b933b4.png",
+    "static/media/Logoinicio.png": "/static/media/Logoinicio.b43da708b6f9e1dbf07c.png",
+    "static/media/planetaModal.png": "/static/media/planetaModal.2569ffe6e344f7903923.png",
+    "static/media/Logo_trainer.png": "/static/media/Logo_trainer.b5ca75a323125b0d49e0.png",
+    "static/media/Logo_intraemprendedor.png": "/static/media/Logo_intraemprendedor.39e2d94bde70e5829983.png",
+    "static/media/Logo_master.png": "/static/media/Logo_master.bdf226c5bcfc920be979.png",
+    "static/media/constelacion.png": "/static/media/constelacion.5089b37bbcf1ba15940f.png",
+    "static/media/Estrella.png": "/static/media/Estrella.ad81ba39614b376a69ba.png",
+    "index.html": "/index.html",
+    "main.2f3df491.css.map": "/static/css/main.2f3df491.css.map",
+    "main.6f17336a.js.map": "/static/js/main.6f17336a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f3df491.css",
+    "static/js/main.6f17336a.js"
+  ]
+}

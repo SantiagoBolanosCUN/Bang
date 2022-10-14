@@ -13,14 +13,14 @@ function Planeta({ name, position, positionTexto, texturePath }) {
     ref.current.rotation.z = clock.getElapsedTime();
   });
   const onPointerMouse = () => {
-    ref.current.scale.x = viewport.width / 20;
-    ref.current.scale.y = viewport.width / 20;
-    ref.current.scale.z = viewport.width / 20;
-  };
-  const offPointerMouse = () => {
     ref.current.scale.x = viewport.width / 25;
     ref.current.scale.y = viewport.width / 25;
     ref.current.scale.z = viewport.width / 25;
+  };
+  const offPointerMouse = () => {
+    ref.current.scale.x = viewport.width / 30;
+    ref.current.scale.y = viewport.width / 30;
+    ref.current.scale.z = viewport.width / 30;
   };
   const onClickHandler = () => {
     history.push(`./${name}`);
@@ -30,7 +30,7 @@ function Planeta({ name, position, positionTexto, texturePath }) {
     <>
       <mesh
         ref={ref}
-        scale={viewport.width / 25}
+        scale={viewport.width / 30}
         position={position}
         onClick={onClickHandler}
         onPointerOver={onPointerMouse}

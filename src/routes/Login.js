@@ -7,15 +7,15 @@ export default function Login() {
     <section className="grid place-items-center min-h-screen bg-gradient-to-r from-indigo-900 via-fuchsia-900 to-indigo-900">
       <div className="text-center sm:text-left p-4 max-w-5xl grid gap-4 sm:grid-cols-2">
         <div className="sm: self-center">
-          <h1 className="text-4xl sm:text-5xl font-semibold sm:col-span-2 ">
+          <h1 className="text-4xl sm:text-5xl font-bold sm:col-span-2 text-white ">
             ¿Estás listo para <br /> vivir esta aventura?
           </h1>
-          <p className="pt-4 pb-4">
+          <p className="pt-4 pb-4 text-white">
             Bienvenido a nuestra fantástica galaxia. Aquí vas a despertar tu
             potencial creativo y formular increíbles proyectos de innovación.
           </p>
 
-          <button class=" border border-white text-white  py-1.5 px-2 rounded-full inline-flex items-center">
+          <button class="border border-white text-white  py-1.5 px-2 rounded-full inline-flex items-center">
             {/* <svg
                 class="fill-current w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
