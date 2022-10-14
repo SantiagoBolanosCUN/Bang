@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import { history } from "./History";
 import Texto from "./Texto";
@@ -7,20 +7,20 @@ import Texto from "./Texto";
 function Planeta({ name, position, positionTexto, texturePath }) {
   const colorTexture = useTexture(texturePath);
   const ref = useRef();
-  const scale = [5, 5, 5];
+  const { viewport } = useThree();
 
   useFrame(({ clock }) => {
     ref.current.rotation.z = clock.getElapsedTime();
   });
   const onPointerMouse = () => {
-    ref.current.scale.x = 7;
-    ref.current.scale.y = 7;
-    ref.current.scale.z = 7;
+    ref.current.scale.x = viewport.width / 20;
+    ref.current.scale.y = viewport.width / 20;
+    ref.current.scale.z = viewport.width / 20;
   };
   const offPointerMouse = () => {
-    ref.current.scale.x = 5;
-    ref.current.scale.y = 5;
-    ref.current.scale.z = 5;
+    ref.current.scale.x = viewport.width / 25;
+    ref.current.scale.y = viewport.width / 25;
+    ref.current.scale.z = viewport.width / 25;
   };
   const onClickHandler = () => {
     history.push(`./${name}`);
@@ -30,7 +30,7 @@ function Planeta({ name, position, positionTexto, texturePath }) {
     <>
       <mesh
         ref={ref}
-        scale={scale}
+        scale={viewport.width / 25}
         position={position}
         onClick={onClickHandler}
         onPointerOver={onPointerMouse}

@@ -45,9 +45,11 @@ function Bg() {
 export default function Home() {
   const props = { base: "#ff4eb8", colorA: "#00ffff", colorB: "#ff00e3" };
   return (
-    <div className="h-screen cursor-pointer">
+    <div className="h-screen w-screen cursor-pointer">
       {/*<Navbar />*/}
       <Canvas
+        width="100%"
+        style={{ maxWidth: "100% !important" }}
         camera={{
           fov: 35,
           zoom: 1.2,
