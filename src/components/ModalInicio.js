@@ -15,28 +15,35 @@ const ModalInicio = ({ setModalOn, setChoice }) => {
 
   return (
     <section className="grid place-items-center min-h-screen bg-gradient-to-r from-indigo-900 via-fuchsia-900 to-indigo-900">
-      <div className="absolute top-10 left-10">
+      <div className="absolute top-10 left-10 sm:top-10 sm:left-20 hover:scale-125">
         <button>
           <img
             src={planetaMini}
             onClick={onClickHandler}
             alt="image1"
-            className="h-[60px]"
-          ></img>
+            className="h-[40px] sm:h-[50px]"
+          />
+          <h1 className="font-bold font-['Montserrat'] pt-1 text-white">
+            Inicio
+          </h1>
         </button>
       </div>
 
       <div className="text-center sm:text-left pt-8 max-w-5xl grid gap-4 sm:grid-cols-1 sm:grid-rows-2">
-        <div className="grid place-items-center">
-          <img src={planetaModal} className="h-[300px] " alt="image1" />
+        <div className="mx-auto">
+          <img
+            src={planetaModal}
+            className="h-[250px] sm:h-[300px] mx-auto"
+            alt="image1"
+          />
         </div>
         <div className="text-center ">
-          <h1 className="text-1xl sm:text-2xl font-['Montserrat'] sm:col-span-2 ">
+          <h1 className="text-1xl sm:text-2xl font-['Montserrat'] sm:col-span-2 text-white ">
             Por millones de años las constelaciones han ayudado a miles de
             civilizaciones entender el universo y comprender que todos estamos
             conectados.
           </h1>
-          <h2 className="pt-8 text-1xl sm:text-2xl font-['Montserrat'] pb-4 font-semibold">
+          <h2 className="pt-8 text-1xl sm:text-2xl font-['Montserrat'] pb-4 font-semibold text-white">
             ¡Conéctate con el conocimiento que tiene nuestra constelación!
           </h2>
 
