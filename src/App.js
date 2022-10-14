@@ -11,6 +11,7 @@ import Ideaverso from "./routes/Ideaverso";
 import LibreriaOrion from "./routes/LibreriaOrion";
 import MeteoroGame from "./routes/MeteoroGame";
 import Login from "./routes/Login";
+import ModalInicio from "./components/ModalInicio";
 
 export default function App() {
   return (
@@ -24,7 +25,8 @@ export default function App() {
           <Route path="/Supernova" element={<Supernova />} />
           <Route path="/Ideaverso" element={<Ideaverso />} />
           <Route path="/MeteoroGame" element={<MeteoroGame />} />
-          <Route path="/LibreriaOrion" element={<LibreriaOrion />} />
+          <Route path="/PostLibreriaOrion" element={<LibreriaOrion />} />
+          <Route path="LibreriaOrion" element={<ModalInicio />} />
         </Routes>
       </ThreeRouter>
     </div>

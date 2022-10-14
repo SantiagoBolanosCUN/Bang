@@ -6,12 +6,9 @@ import Navbar from "./Navbar";
 
 const ModalInicio = ({ setModalOn, setChoice }) => {
   const handleOKClick = () => {
-    history.push(`/`);
+    history.push(`/PostLibreriaOrion`);
   };
-  const handleOKClick2 = () => {
-    setChoice(false);
-    setModalOn(false);
-  };
+
   return (
     <div className="   bg-zinc-200 fixed inset-0 z-50   ">
       <div className="relative h-screen justify-center items-center bg-white border-4 border-sky-500 ">
@@ -33,7 +30,7 @@ const ModalInicio = ({ setModalOn, setChoice }) => {
             <div className=" font-mono font-bold mt-2">
               ¡Conéctate con el conocimiento que tiene nuestra constelación!
             </div>
-            <button type="button" onClick={handleOKClick2}>
+            <button type="button" onClick={handleOKClick}>
               <svg
                 aria-hidden="true"
                 className="buttonImg"

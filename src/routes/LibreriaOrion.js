@@ -3,14 +3,12 @@ import "../components/libreriaOrion.css";
 
 import { useState } from "react";
 import Modal from "../components/modal";
-import ModalInicio from "../components/ModalInicio";
 import Navbar from "../components/Navbar";
 
 export default function LibreriaOrion() {
   const [modalOn, setModalOn] = useState(false);
   const [choice, setChoice] = useState(false);
-  const [modalOn2, setModalOn2] = useState(true);
-  const [choice2, setChoice2] = useState(true);
+
   const [numeroSlide, setNumeroSlide] = useState(0);
   const [descripcionSlide, setDescripcionSlide] = useState(0);
 
@@ -32,11 +30,6 @@ export default function LibreriaOrion() {
           numeroSlide={numeroSlide}
           descripcionSlide={descripcionSlide}
         />
-      )}
-      {choice && <div className="flex justify-center"></div>}
-
-      {modalOn2 && (
-        <ModalInicio setModalOn={setModalOn2} setChoice={setChoice2} />
       )}
 
       <Navbar></Navbar>
