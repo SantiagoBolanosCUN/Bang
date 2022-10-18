@@ -3,21 +3,17 @@ import React from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
+import YoutubeEmbed from "../components/YoutubeEmbed";
 
 // custom css
 import "./HeroSlider.css";
 // imagenes
-import Libreria2 from "../assets/Libreria2.png";
-import Libreria3 from "../assets/Libreria3.png";
-import Libreria4 from "../assets/Libreria4.png";
-import Libreria5 from "../assets/Libreria5.png";
-import Libreria6 from "../assets/Libreria6.png";
-import Libreria6A from "../assets/Libreria6A.png";
-import Libreria11 from "../assets/Libreria11.png";
-import Libreria11A from "../assets/Libreria11A.png";
-import Libreria12 from "../assets/Libreria12.png";
-import Libreria13 from "../assets/Libreria13.png";
-import Libreria14 from "../assets/Libreria14.png";
+import Libreria2 from "../assets/libreria2.png";
+import Libreria3 from "../assets/libreria3.png";
+import Libreria4 from "../assets/libreria4.png";
+import Libreria5 from "../assets/libreria5.png";
+import Libreria6 from "../assets/libreria6.png";
+import Libreria7 from "../assets/libreria7.png";
 
 const SwiperImg = ({ numeroSlide }) => {
   return (
@@ -64,23 +60,23 @@ const SwiperImg = ({ numeroSlide }) => {
             <img src={Libreria6} alt="image5" style={{ width: "100%" }}></img>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Libreria6A} alt="image6" style={{ width: "100%" }}></img>
+            <img src={Libreria7} alt="image6" style={{ width: "100%" }}></img>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Libreria11} alt="image7" style={{ width: "100%" }}></img>
+            <img src={Libreria2} alt="image7" style={{ width: "100%" }}></img>
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src={Libreria11A} alt="image8" style={{ width: "100%" }}></img>
+            <YoutubeEmbed embedId="RSUykLfEmVE" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Libreria12} alt="image9" style={{ width: "100%" }}></img>
+            <YoutubeEmbed embedId="voLlzxR63Gc" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Libreria13} alt="image10" style={{ width: "100%" }}></img>
+            <YoutubeEmbed embedId="Pw9NbIzoYc8" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Libreria14} alt="image11" style={{ width: "100%" }}></img>
+            <YoutubeEmbed embedId="mghzxW_giT0" />
           </SwiperSlide>
         </Swiper>
       </div>

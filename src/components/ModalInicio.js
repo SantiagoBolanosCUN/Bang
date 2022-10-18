@@ -1,4 +1,3 @@
-import "../components/modalInicio.css";
 import { history } from "./History";
 import planetaModal from "../assets/planetaModal.png";
 import planetaMini from "../assets/planetaMini.png";

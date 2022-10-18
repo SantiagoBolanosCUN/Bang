@@ -1,13 +1,11 @@
 .galaxy {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 20px;
+  height: 95%;
   display: flex;
   background: url("../assets/constelacion.png");
-  background-size: 80%;
+  background-size: 70%;
   background-position: top center;
   background-repeat: no-repeat;
+  margin-top: 5vh;
 }
 
 .constelation {
@@ -34,14 +32,9 @@ constelation br {
   text-align: center;
 }
 
-.constelation h1 {
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  font: 30px "Arial";
-}
 
 .estrella {
-  height: 100%;
+  height: 70%;
   flex-flow: column;
   background: transparent;
   display: flex;
@@ -55,222 +48,9 @@ constelation br {
   width: 25vw;
   height: 15vw;
   margin: 85px 55px 0 45px;
-  transform: rotate(45deg);
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   flex-flow: row;
-}
-
-.btn {
-  background-color: #000;
-  color: #fff;
-  padding: 8px;
-  border: none;
-  margin-top: 20px;
-  border-radius: 4px;
-  border-right: 1px solid #f5f5f5;
-  border-left: 1px solid #f5f5f5;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
-}
-.dot {
-  width: 10px;
-  border-radius: 50%;
-  height: 10px;
-  background: url("../assets/Estrella.png");
-  position: relative;
-  outline: 1px solid #f5f5f5;
-  outline-offset: 5px;
-  margin: 0px -15px 0 15px;
-  cursor: pointer;
-  animation-name: sparkle;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-
-@keyframes sparkle {
-  0% {
-    background: #eee;
-    box-shadow: 1px -1px 6px #f0f5f7;
-  }
-  15% {
-    background: #fefefe;
-    box-shadow: 1px 1px 1px #f0f5f7;
-  }
-  50% {
-    background: #e2e7fc;
-    box-shadow: 1px -1px 5px #f0f5f7;
-  }
-  65% {
-    background: #cad4e0;
-    box-shadow: -1px 1px 6px #f0f5f7;
-  }
-  100% {
-    box-shadow: 1px -1px 8px #f0f5f7;
-  }
-}
-
-.theev {
-  width: 150px;
-  height: auto;
-  position: absolute;
-  margin: 25px 0 0 0;
-  background: #f5f5f5;
-  font-family: "Arial";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 5px;
-  color: #0e0e0e;
-  text-decoration: none;
-  opacity: 0;
-  z-index: -1;
-  font-size: 11px;
-  transition: all 400ms ease-in-out;
-  color: #0e0e0e;
-}
-
-.dot:hover .theev {
-  opacity: 1;
-  z-index: 9 !important;
-}
-
-.dentr1 {
-  width: 8px;
-  height: 8px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  outline: 1px solid #f5f5f5;
-  outline-offset: 10px;
-  cursor: pointer;
-  animation-name: sparkle1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-
-@keyframes sparkle1 {
-  0% {
-    background: #eee;
-    box-shadow: 1px -1px 6px #f0e0f7;
-  }
-  15% {
-    background: #fefefe;
-    box-shadow: 1px 1px 1px #f0e0f7;
-  }
-  50% {
-    background: #dbf3ff;
-    box-shadow: 1px -1px 5px #f0e0f7;
-  }
-  65% {
-    background: #cad4e0;
-    box-shadow: -1px 1px 6px #f0e0f7;
-  }
-  100% {
-    box-shadow: 1px -1px 8px #f0e0f7;
-  }
-}
-
-.theev2 {
-  width: 150px;
-  height: auto;
-  position: absolute;
-  opacity: 0;
-  transform: rotate(-45deg);
-  font-size: 11px;
-  background: #f5f5f5;
-  margin: -65px 0 0 -70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-family: "Arial";
-  padding: 5px;
-  color: #0e0e0e;
-  text-decoration: none;
-  z-index: -9;
-  transition: all 400ms ease-in-out;
-}
-
-.theev3 {
-  width: 150px;
-  height: auto;
-  position: absolute;
-  opacity: 0;
-  transform: rotate(-45deg);
-  font-size: 11px;
-  background: #f5f5f5;
-  margin: -65px 0 0 -70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-family: "Arial";
-  padding: 5px;
-  color: #0e0e0e;
-  text-decoration: none;
-  z-index: -9;
-  transition: all 400ms ease-in-out;
-}
-
-.dentr1:hover .theev2 {
-  opacity: 1;
-  z-index: 9 !important;
-}
-.dentr1:hover {
-  width: 10px;
-  height: 10px;
-}
-
-.dentr2:hover .theev3 {
-  opacity: 1;
-  z-index: 9 !important;
-}
-.dentr2:hover {
-  width: 10px;
-  height: 10px;
-}
-
-.dentr2 {
-  width: 8px;
-  height: 8px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  outline: 1px solid #f5f5f5;
-  outline-offset: 10px;
-  position: relative;
-  top: 150px;
-  left: 150px;
-  cursor: pointer;
-  animation-name: sparkle2;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-
-@keyframes sparkle2 {
-  0% {
-    background: #eee;
-    box-shadow: 1px -1px 6px #f7e3d8;
-  }
-  15% {
-    background: #fefefe;
-    box-shadow: 1px 1px 1px #f7e3d8;
-  }
-  50% {
-    background: #f7e3d8;
-    box-shadow: 1px -1px 5px #f7e3d8;
-  }
-  65% {
-    background: #cad4e0;
-    box-shadow: -1px 1px 6px #f7e3d8;
-  }
-  100% {
-    box-shadow: 1px -1px 8px #f7e3d8;
-  }
 }
 
 .galaxy ::-webkit-scrollbar {

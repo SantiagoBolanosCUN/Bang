@@ -1,6 +1,5 @@
 import React from "react";
 import Logoinicio from "../assets/Logoinicio.png";
-import "../components/modalInicio.css";
 
 export default function Login() {
   return (
