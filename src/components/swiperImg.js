@@ -2,7 +2,7 @@ import React from "react";
 // react-id-swiper
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
 // custom css
@@ -32,6 +32,7 @@ const SwiperImg = ({ numeroSlide }) => {
           style={{
             "--swiper-navigation-color": "black",
             "--swiper-navigation-size": "2.5rem",
+            "--background-color": "none",
           }}
           centeredSlides={true}
           autoplay={{
@@ -39,7 +40,7 @@ const SwiperImg = ({ numeroSlide }) => {
             disableOnInteraction: false,
           }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Pagination, Navigation]}
           initialSlide={numeroSlide}
         >
           <SwiperSlide>

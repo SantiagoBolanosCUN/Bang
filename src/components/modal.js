@@ -35,9 +35,8 @@ const Modal = ({ setModalOn, setChoice, numeroSlide, descripcionSlide }) => {
             <span className="sr-only">Close modal</span>
           </button>
         </div>
-        <div className="flex justify-center">
-          <SwiperImg numeroSlide={numeroSlide} />
-        </div>
+
+        <SwiperImg numeroSlide={numeroSlide} />
       </div>
     </div>
   );
