@@ -32,7 +32,6 @@ const SwiperImg = ({ numeroSlide }) => {
           style={{
             "--swiper-navigation-color": "black",
             "--swiper-navigation-size": "2.5rem",
-            "--background-color": "none",
           }}
           centeredSlides={true}
           autoplay={{
